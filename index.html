@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Нүүр хуудас</title>
+    <!--<link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>-->
+</head>
+<body>
+    <div class="container" ></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Нүүр</a></li>
+                <li><a href="news.html">Мэдээ</a></li>
+                <li><a href="about.html">Бидний тухай</a></li>
+                <li><a href="contact.html">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Тавтай морилно уу!</h1>
+            <p>Манай веб сайтад тавтай морил.</p>
+        </section>
+        <section id="date-section">
+            <h2>Өнөөдрийн огноо:</h2>
+            <div id="date"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Миний Веб Сайт</p>
+    </footer>
+</body>
+</html>
+<!-- 
+script.js
+javascript
+Copy code --><script>
+// Одоогийн огноог харуулах
+document.addEventListener("DOMContentLoaded", () => {
+    const dateElement = document.getElementById("date");
+    const currentDate = new Date();
+    dateElement.textContent = currentDate.toLocaleDateString("mn-MN");
+});</script>
+
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мэдээ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Нүүр</a></li>
+                <li><a href="news.html">Мэдээ</a></li>
+                <li><a href="about.html">Бидний тухай</a></li>
+                <li><a href="contact.html">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Мэдээний хуудас</h1>
+        <p>Энд та хамгийн сүүлийн үеийн мэдээг үзэх боломжтой.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Миний Веб Сайт</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Холбоо барих</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Нүүр</a></li>
+                <li><a href="news.html">Мэдээ</a></li>
+                <li><a href="about.html">Бидний тухай</a></li>
+                <li><a href="contact.html">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Холбоо барих</h1>
+        <form>
+            <label for="name">Нэр:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Имэйл:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Илгээх</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Миний Веб Сайт</p>
+    </footer>
+</body>
+</html>
