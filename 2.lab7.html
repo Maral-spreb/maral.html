@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandakh University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-50 font-sans">
+    <!-- Header -->
+    <header class="bg-red-600 text-white p-6  text-3xl font-extrabold shadow-md">
+        Mandakh University
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="bg-red-500 text-white p-3 shadow-md">
+        <ul class="flex justify space-x-6 text-lg">
+            <li><a href="#about" class="hover:underline">Бидний тухай</a></li>
+            <li><a href="#programs" class="hover:underline">Хөтөлбөрүүд</a></li>
+            <li><a href="#contact" class="hover:underline">Холбоо барих</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Banner -->
+    <div class="relative w-full max-w-6xl mx-auto mt-6 rounded-lg overflow-hidden shadow-lg">
+        <img id="bannerImage" src="https://www.aupp.edu.kh/wp-content/uploads/AUPP-and-MPTC-signed-MoU-with-verify.gov_.jpg" alt="Banner">
+        <img id="https://mgl.gogo.mn/newsn/images/ck/2018/12/28/12-124937-1126489134.jpeg" alt="Banner">
+        <img id="https://th.bing.com/th/id/R.7e3f5cae131e7e722f344c9a2f99a298?rik=S0C59EpLPK%2bbng&riu=http%3a%2f%2fe.mandakh.edu.mn%2fimages%2flogo-full.jpg&ehk=DzNw0d%2fwMInj6KDGhXreh%2bR691KXZH9F3s0UzeAoD4o%3d&risl=&pid=ImgRaw&r=0" alt="Banner">
+        <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full p-6 text-white">
+            <h2 class="text-2xl font-semibold">Таны ирээдүй эндээс эхэлнэ</h2>
+        </div>
+    </div>
+    
+    <!-- Information Section -->
+    <section id="about" class="max-w-6xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-bold text-red-700">Сургуулийн тухай</h2>
+        <p class="mt-4 text-gray-700 leading-relaxed">Mandakh University нь Монгол Улсад мэдээллийн технологи, бизнесийн удирдлага, санхүүгийн чиглэлээр тэргүүлэгч их сургууль юм. Оюутнуудад чанартай боловсрол олгох, орчин үеийн сургалтын орчныг бүрдүүлэх зорилготой.</p>
+    </section>
+    
+    <!-- Programs Section -->
+    <section id="programs" class="max-w-6xl mx-auto mt-8 p-6 bg-red-100 shadow-lg rounded-lg">
+        <h2 class="text-2xl font-bold text-red-700">Сургалтын Хөтөлбөрүүд</h2>
+        <ul class="mt-4 text-gray-700 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="p-4 bg-white rounded-lg shadow">Мэдээллийн Технологи</li>
+            <li class="p-4 bg-white rounded-lg shadow">Санхүү, Нягтлан бодох бүртгэл</li>
+            <li class="p-4 bg-white rounded-lg shadow">Бизнесийн удирдлага</li>
+            <li class="p-4 bg-white rounded-lg shadow">Маркетинг</li>
+            <li class="p-4 bg-white rounded-lg shadow">Мэдээллийн Технологи</li>
+            <li class="p-4 bg-white rounded-lg shadow">Санхүү, Нягтлан бодох бүртгэл</li>
+            <li class="p-4 bg-white rounded-lg shadow">Бизнесийн удирдлага</li>
+            <li class="p-4 bg-white rounded-lg shadow">Маркетинг</li>
+        </ul>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-red-600 text-white text-center p-6 mt-8">
+        <p class="text-lg font-semibold">Холбоо барих</p>
+        <p class="mt-2">Утас: +976 1234-5678 | Имэйл: info@mandakh.edu.mn</p>
+        <p class="mt-2">&copy; 2025 Mandakh University - Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+    
+    <script>
+        const images = ["https://www.aupp.edu.kh/wp-content/uploads/AUPP-and-MPTC-signed-MoU-with-verify.gov_.jpg", "https://mgl.gogo.mn/newsn/images/ck/2018/12/28/12-124937-1126489134.jpeg", "https://th.bing.com/th/id/R.7e3f5cae131e7e722f344c9a2f99a298?rik=S0C59EpLPK%2bbng&riu=http%3a%2f%2fe.mandakh.edu.mn%2fimages%2flogo-full.jpg&ehk=DzNw0d%2fwMInj6KDGhXreh%2bR691KXZH9F3s0UzeAoD4o%3d&risl=&pid=ImgRaw&r=0"];
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.getElementById("bannerImage").src = images[index];
+        }, 3000);
+    </script>
+</body>
+</html>
